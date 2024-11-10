@@ -12,7 +12,7 @@ const EventApp = () => {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         // await window.ethereum.enable();
         const signer = provider.getSigner();
-        const address = "0x6a464b31b714ad57d7713ed3684a9441d44b473f"; // Replace with your contract address
+        const address = "0x66ca135528dc794d6e3244fccb4e1aa7ee2bc8d7"; // Replace with your contract address
         const eventContract = new ethers.Contract(address, abi, signer);
         setContract(eventContract);
       }

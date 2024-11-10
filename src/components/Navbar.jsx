@@ -23,12 +23,12 @@ const Navbar = () => {
     rpcUrl: "https://cloudflare-eth.com",
   };
 
-   const scroll = {
-     chainId: 534351,
-     name: "Scroll",
+   const opbnb = {
+     chainId: 5611,
+     name: "tbnb",
      currency: "ETH",
-     explorerUrl: "https://sepolia.scrollscan.com/",
-     rpcUrl: "https://rpc.ankr.com/scroll_sepolia_testnet",
+     explorerUrl: "https://opbnb-testnet.bscscan.com/",
+     rpcUrl: "https://opbnb-testnet-rpc.bnbchain.org",
    };
 
   // 3. Create a metadata object
@@ -55,7 +55,7 @@ const Navbar = () => {
   // 5. Create a Web3Modal instance
   createWeb3Modal({
     ethersConfig,
-    chains: [mainnet, scroll],
+    chains: [mainnet, opbnb],
     projectId,
     // enableSwaps: true,
     enableAnalytics: true, // Optional - defaults to your Cloud configuration
